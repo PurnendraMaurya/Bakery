@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#5b3027"><meta name="description" content="Purnendra Bakery - Freshly baked happiness. Order online and pick up at our store.">
+<title>Purnendra Bakery | Freshly Baked Happiness</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="announcement" id="announcement">Freshly baked happiness • Order online, pick up in store</div>
+<header class="site-header">
+  <a class="brand" href="#" aria-label="Purnendra Bakery home"><span class="brand-mark">PB</span><span><b>Purnendra</b><small>BAKERY & CAKES</small></span></a>
+  <div class="search-wrap"><span>⌕</span><input id="searchInput" placeholder="Search cakes, pastries, cookies..." autocomplete="off"><button id="clearSearch" aria-label="Clear search">×</button><div id="searchSuggestions" class="suggestions"></div></div>
+  <nav class="desktop-actions"><button id="langBtn" class="text-btn">हिंदी</button><button class="icon-btn" data-open="wishlist">♡ <small id="wishCount">0</small></button><button class="icon-btn" data-open="account">♙</button><button class="cart-btn" data-open="cart">Cart <b id="cartCount">0</b></button></nav>
+  <button class="mobile-menu" id="mobileMenu">☰</button>
+</header>
+<nav class="category-nav" id="categoryNav"><button class="active" data-category="All">All Products</button><button data-category="Cakes">Cakes</button><button data-category="Pastries">Pastries</button><button data-category="Cookies">Cookies</button><button data-category="Breads">Breads</button><button data-category="Cupcakes">Cupcakes</button><button data-category="Brownies">Brownies</button><button data-category="Gifts">Gift Hampers</button></nav>
+<main>
+<section class="hero">
+ <div class="hero-copy"><span class="eyebrow">MADE WITH LOVE, BAKED FRESH</span><h1>A little sweetness<br><em>goes a long way.</em></h1><p>Beautiful cakes, delightful treats and everyday favourites — freshly prepared for your special moments.</p><div class="hero-buttons"><a href="#shop" class="primary-btn">Explore our menu <span>→</span></a><span class="pickup-note">📍 Store pickup only</span></div></div>
+ <div class="hero-art"><div class="hero-circle"></div><div class="cake-emoji">🎂</div><div class="floating f1">♡ Made fresh</div><div class="floating f2">✦ Sweet moments</div><div class="hero-sticker">BAKED<br>FRESH<br>DAILY</div></div>
+</section>
+<section class="trust-row"><div>✧ <b>Freshly prepared</b><small>Made with care</small></div><div>♧ <b>Quality ingredients</b><small>Goodness in every bite</small></div><div>⌂ <b>Easy store pickup</b><small>Choose your time slot</small></div><div>♡ <b>Made for moments</b><small>Celebrate every day</small></div></section>
+<section class="section" id="shop"><div class="section-heading"><div><span class="eyebrow">A TASTE OF HAPPINESS</span><h2>Find your <em>favourite.</em></h2><p>Little treats, big reasons to smile.</p></div><div class="sort-wrap"><label for="sortSelect">Sort by</label><select id="sortSelect"><option value="featured">Featured</option><option value="popular">Most popular</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option><option value="new">Newest</option><option value="rating">Top rated</option></select></div></div>
+<div class="filter-bar"><div id="chips" class="chips"><button class="chip selected" data-filter="all">All</button><button class="chip" data-filter="eggless">Eggless</button><button class="chip" data-filter="bestseller">Bestsellers</button><button class="chip" data-filter="available">In stock</button></div><div class="price-filter"><label>Max price <b id="priceLabel">₹1,000</b></label><input id="priceRange" type="range" min="100" max="1000" step="50" value="1000"></div></div>
+<div id="productGrid" class="product-grid"></div><div id="emptyState" class="empty-state hidden">No treats found. Try changing your search or filters. 🍪</div>
+</section>
+<section class="section soft-section"><div class="section-heading"><div><span class="eyebrow">HANDPICKED FOR YOU</span><h2>You may also <em>love.</em></h2><p>Popular picks and little extras to complete your celebration.</p></div></div><div id="recommendGrid" class="recommend-grid"></div></section>
+<section class="section recently-section" id="recentSection"><div class="section-heading"><div><span class="eyebrow">YOUR LITTLE TRAIL</span><h2>Recently <em>viewed.</em></h2><p>Pick up right where you left off.</p></div><button class="outline-btn" id="clearViewed">Clear history</button></div><div id="recentGrid" class="recommend-grid"></div></section>
+<section class="visit-banner"><div><span class="eyebrow">COME SAY HELLO</span><h2>Your treats are waiting<br><em>at our store.</em></h2><p>Place your order online and collect it at the shop. No home delivery currently.</p><button class="light-btn" data-open="store">Store details</button></div><div class="visit-icon">🛍️</div></section>
+<section class="section reviews"><div class="section-heading"><div><span class="eyebrow">KIND WORDS</span><h2>Made sweeter by <em>you.</em></h2></div></div><div class="review-grid"><article>“The cake made our celebration extra special. Beautiful and delicious!”<b>— Happy customer</b><span>★★★★★</span></article><article>“Loved how easy it was to choose and order. Fresh taste!”<b>— Happy customer</b><span>★★★★★</span></article><article>“A lovely little bakery for all our sweet cravings.”<b>— Happy customer</b><span>★★★★★</span></article></div></section>
+</main>
+<footer><div class="footer-main"><div class="brand footer-brand"><span class="brand-mark">PB</span><span><b>Purnendra</b><small>BAKERY & CAKES</small></span></div><p>Freshly baked happiness, made with love.</p><div class="footer-links"><a href="#shop">Shop</a><button data-open="store">Visit us</button><button data-open="contact">Contact</button><button data-open="policy">Policies</button><button id="adminOpen">Admin</button></div></div><div class="footer-bottom">© <span id="year"></span> Purnendra Bakery. Made with ♡</div></footer>
+<nav class="bottom-nav"><button data-bottom="home">⌂<small>Home</small></button><button data-bottom="categories">▦<small>Categories</small></button><button data-bottom="search">⌕<small>Search</small></button><button data-open="wishlist">♡<small>Wishlist</small></button><button data-open="account">♙<small>Account</small></button></nav>
+<div id="overlay" class="overlay hidden"></div>
+<aside id="drawer" class="drawer"><div class="drawer-head"><h3 id="drawerTitle">Your cart</h3><button id="closeDrawer">×</button></div><div id="drawerContent"></div></aside>
+<div id="modal" class="modal hidden"><div class="modal-card"><button class="modal-close" id="closeModal">×</button><div id="modalContent"></div></div></div>
+<div id="toast" class="toast"></div>
+<script src="app.js"></script>
+</body></html>
